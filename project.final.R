@@ -1,4 +1,3 @@
-setwd("C:/BAN500/Project")
 
 library(forecast)
 library(fpp)
