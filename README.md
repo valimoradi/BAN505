@@ -1,2 +1,5 @@
 # BAN505
-Here we work on group projects of the BAN 505 course
+#Sabanci
+Project 10 of the DATA MINING FOR BUSINESS ANALYTICS book by wiley.
+bicup2006 data set.
+Predicting transportation demand using time series analysis for a bus stop.
