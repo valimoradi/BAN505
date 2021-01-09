@@ -1,11 +1,7 @@
-
 library(forecast)
-library(fpp)
 
 ride.df = read.csv("bicup2006.csv", header = TRUE)
-ride.ts = ts(ride.df$DEMAND, 
-             start= c(0), end= c(24), 
-             frequency = 63)
+ride.ts = ts(ride.df$DEMAND, start= c(0), end= c(24), frequency = 63)
 
 #creating weekend dummy
 ride.df$dummy =  rep(0, length(ride.df))
@@ -73,6 +69,8 @@ lines(train.lm.trend.season.dummy$fitted.values, lwd= 2, col="blue")
 
 #Validation Line
 lines(valid.ts)
+
+#adding explanatory information to the plot
 abline(v=14, col="red", lwd=3)       
 abline(v=21, col="red",lwd=3)    
 text(7,155,"Training", cex = 1.25)
